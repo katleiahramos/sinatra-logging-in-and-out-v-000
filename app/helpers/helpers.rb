@@ -1,5 +1,5 @@
 class Helpers
-  def current_user(session)
+  def current_user(session_args)
 
   end
 
