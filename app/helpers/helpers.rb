@@ -5,7 +5,6 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    un = session[:username]
-    balance = session[:balance]
+    session[:user_id]
   end
 end
