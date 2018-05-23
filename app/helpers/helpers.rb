@@ -1,7 +1,7 @@
 class Helpers
   def self.current_user(session_args)
-    @username = session_args[:username]
-    User.find_by(:username => @username)
+     
+    User.find(session_args[:user_id])
     binding.pry
   end
 
