@@ -4,7 +4,7 @@ class Helpers
 
   end
 
-  def is_logged_in?
+  def self.is_logged_in?
 
   end
 end
