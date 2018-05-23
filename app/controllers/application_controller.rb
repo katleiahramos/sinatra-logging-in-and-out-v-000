@@ -14,6 +14,7 @@ class ApplicationController < Sinatra::Base
     if User.find(:username => params[:username])
       @user = User.find(:username => params[:username])
       session[:id] = @user.id
+      binding.pry
       redirect '/account'
     else
       erb :error
@@ -21,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    binding.pry
+
     erb :account
   end
 
